@@ -30,3 +30,9 @@ http:
           - HttpOnly
         condition: and
         case-insensitive: true
+    extractors: 
+      - tpye: regex
+        part: header
+        regex:
+          - ".*HttpOnly"
+
