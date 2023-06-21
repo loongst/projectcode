@@ -1,0 +1,24 @@
+1、java17
+2、springboot3
+3、maven3.8.x
+
+4、swagger3
+https://springdoc.org/v2/
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.1.0</version>
+</dependency>
+
+
+5、actuator
+https://www.pianshen.com/article/24562406838/
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+management.server.port=8081
+management.endpoints.web.exposure.include=*
+management.endpoints.shutdown.enable=true
+management.endpoints.env.enabled= true
