@@ -1,0 +1,49 @@
+server:
+  address: 0.0.0.0
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+springdoc:
+  api-docs:
+    enabled: true
+    version: openapi_3_0
+  show-actuator: true
+
+
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      discovery:
+        enabled: true
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+    info:
+      enabled: true
+    auditevents:
+      enabled: true
+    beans:
+      enabled: true
+    caches:
+      enabled: true
+    conditions:
+      enabled: true
+    loggers:
+      enabled: true
+    logfile:
+      enabled: true
+    metrics:
+      enabled: true
+

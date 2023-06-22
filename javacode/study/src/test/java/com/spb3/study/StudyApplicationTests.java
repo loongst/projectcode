@@ -1,13 +1,13 @@
-package com.evan.wj;
+package com.spb3.study;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WjApplicationTests {
+class StudyApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
